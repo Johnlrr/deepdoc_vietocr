@@ -136,7 +136,7 @@ class TextRecognizer:
         
         #seq2seq
         config = Cfg.load_config_from_name('vgg_seq2seq')
-        config['weights'] = r"vietocr\weight\vgg_seq2seq.pth" 
+        config['weights'] = os.path.join("vietocr", "weight", "vgg_seq2seq.pth") 
 
         #transformer
         #config = Cfg.load_config_from_name('vgg_transformer')
